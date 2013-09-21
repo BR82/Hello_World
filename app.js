@@ -5,7 +5,7 @@ app.use(express.favicon()); 																	// отдаем стандартн�
 app.use(express.bodyParser()); 																	// стандартный модуль, для парсинга JSON в запросах
 app.use(express.methodOverride()); 																// поддержка put и delete
 
-app.get('/api', function (req, res) {
+app.get('/', function (req, res) {
     res.send('API version: 0.6.1 beta');
 });
 
